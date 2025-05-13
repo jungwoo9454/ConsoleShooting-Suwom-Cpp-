@@ -33,3 +33,7 @@ void GameMng::CreateBullet(int x, int y)
 		}
 	}
 }
+
+void GameMng::CreateEnemy(int x, int y)
+{
+}

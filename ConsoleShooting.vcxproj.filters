@@ -22,6 +22,12 @@
     <Filter Include="Bullet">
       <UniqueIdentifier>{5c372ab8-78e0-4282-a2f3-30f198461a46}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Unit">
+      <UniqueIdentifier>{a7623db8-7ee3-4dec-9c33-002a59f9baa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy">
+      <UniqueIdentifier>{bcce2ae2-00ee-4d2e-b664-b794e5752252}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -39,6 +45,12 @@
     <ClCompile Include="Bullet.cpp">
       <Filter>Bullet</Filter>
     </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include.h">
@@ -55,6 +67,12 @@
     </ClInclude>
     <ClInclude Include="Bullet.h">
       <Filter>Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Enemy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

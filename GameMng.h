@@ -12,4 +12,5 @@ public:
 	void Draw();
 
 	void CreateBullet(int x, int y);
+	void CreateEnemy(int x, int y);
 };

@@ -6,7 +6,7 @@ Player::Player()
 	y = 15;
 	body = 'A';
 	fColor = INTENSITY_WHITE;
-	bColor = BLACK;
+	isAlive = true;
 }
 
 Player::~Player()
@@ -18,11 +18,6 @@ void Player::Update()
 	Move();
 	Clipping();
 	FireBullet();
-}
-
-void Player::Draw()
-{
-	DrawChar(x, y, body, fColor, bColor);
 }
 
 void Player::Move()

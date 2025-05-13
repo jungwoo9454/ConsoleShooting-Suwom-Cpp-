@@ -1,18 +1,11 @@
 #pragma once
-class Player
+class Player : public Unit
 {
 public:
 	Player();
 	~Player();
 
-	int x;
-	int y;
-	char body;
-	WORD fColor;
-	WORD bColor;
-
-	void Update();
-	void Draw();
+	void Update() override;
 
 	void Move();
 	void Clipping();

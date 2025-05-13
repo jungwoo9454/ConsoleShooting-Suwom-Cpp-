@@ -3,8 +3,11 @@
 #include <time.h>
 #include "Define.h"
 
+#include "Unit.h"
+
 #include "Player.h"
 #include "Bullet.h"
+#include "Enemy.h"
 
 
 
