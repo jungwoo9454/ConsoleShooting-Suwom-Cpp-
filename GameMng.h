@@ -6,6 +6,7 @@ public:
 	~GameMng();
 
 	Player player;
+	Bullet bullets[D_BULLET_MAX];
 
 	void Update();
 	void Draw();

@@ -55,4 +55,8 @@ void Player::Clipping()
 
 void Player::FireBullet()
 {
+	if (GetAsyncKeyState(VK_SPACE))
+	{
+		gamemng.CreateBullet(x, y);
+	}
 }
