@@ -28,6 +28,12 @@
     <Filter Include="Enemy">
       <UniqueIdentifier>{bcce2ae2-00ee-4d2e-b664-b794e5752252}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Effect">
+      <UniqueIdentifier>{9d61ac23-c61f-48a1-9bb9-7b4f138c7684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Text">
+      <UniqueIdentifier>{66ca41e5-f766-499c-9b53-b9723d83278d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -51,6 +57,12 @@
     <ClCompile Include="Enemy.cpp">
       <Filter>Enemy</Filter>
     </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include.h">
@@ -73,6 +85,12 @@
     </ClInclude>
     <ClInclude Include="Enemy.h">
       <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Text</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

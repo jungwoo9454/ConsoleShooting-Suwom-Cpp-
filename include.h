@@ -2,12 +2,17 @@
 #include <Windows.h>	//win32 API
 #include <time.h>
 #include "Define.h"
+#include <string>
+#include <sstream>
+
 
 #include "Unit.h"
 
 #include "Player.h"
 #include "Bullet.h"
 #include "Enemy.h"
+#include "Effect.h"
+#include "Text.h"
 
 
 
