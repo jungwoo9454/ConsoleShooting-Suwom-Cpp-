@@ -34,6 +34,9 @@
     <Filter Include="Text">
       <UniqueIdentifier>{66ca41e5-f766-499c-9b53-b9723d83278d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Singleton">
+      <UniqueIdentifier>{03308def-6f86-47ec-a5eb-32e9ad30ccbc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -91,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="Text.h">
       <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Singleton</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

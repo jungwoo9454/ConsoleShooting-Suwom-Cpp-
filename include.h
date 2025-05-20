@@ -5,6 +5,8 @@
 #include <string>
 #include <sstream>
 
+#include "Singleton.h"
+
 
 #include "Unit.h"
 

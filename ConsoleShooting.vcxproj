@@ -145,6 +145,7 @@
     <ClInclude Include="GameMng.h" />
     <ClInclude Include="include.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Singleton.h" />
     <ClInclude Include="Text.h" />
     <ClInclude Include="Unit.h" />
   </ItemGroup>
