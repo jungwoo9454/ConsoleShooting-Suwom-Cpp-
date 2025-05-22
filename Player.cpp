@@ -52,7 +52,13 @@ void Player::FireBullet()
 {
 	if (GetAsyncKeyState(VK_SPACE))
 	{
-		// GameMng::GetIns()->CreateBullet(x, y);
+		//GameMng::GetIns()->CreateBullet(x, y);
+		
+		//((GameState*)GameMng::GetIns()->statectrl.m_pCurState)->CreateBullet(x, y);
+		((GameState*)GameMng::GetIns()->statectrl.m_pStates[E_GAME])->CreateBullet(x, y);
+
+		// 강제형변환, dynamic_cast, static_cast
 		// 
+		// C++ FSM, 다형성, 상속, 업캐스팅, 다운캐스팅
 	}
 }
