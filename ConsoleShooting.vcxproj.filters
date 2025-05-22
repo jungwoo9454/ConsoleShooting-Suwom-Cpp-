@@ -37,6 +37,15 @@
     <Filter Include="Singleton">
       <UniqueIdentifier>{03308def-6f86-47ec-a5eb-32e9ad30ccbc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="State">
+      <UniqueIdentifier>{c011ed2d-552a-4c94-9e2c-bc4e1c59235c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\MenuState">
+      <UniqueIdentifier>{a1c10401-3b61-40c7-8447-29499435a6f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\GameState">
+      <UniqueIdentifier>{d08aaf96-85ea-4dfb-b227-5c8539eb5df0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -65,6 +74,18 @@
     </ClCompile>
     <ClCompile Include="Text.cpp">
       <Filter>Text</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="StateCtrl.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuState.cpp">
+      <Filter>State\MenuState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>State\GameState</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +118,18 @@
     </ClInclude>
     <ClInclude Include="Singleton.h">
       <Filter>Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="StateCtrl.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuState.h">
+      <Filter>State\MenuState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>State\GameState</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

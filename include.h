@@ -7,8 +7,10 @@
 
 #include "Singleton.h"
 
-
 #include "Unit.h"
+
+#include "State.h"
+#include "StateCtrl.h"
 
 #include "Player.h"
 #include "Bullet.h"
@@ -16,8 +18,8 @@
 #include "Effect.h"
 #include "Text.h"
 
-
-
+#include "MenuState.h"
+#include "GameState.h"
 
 #include "GameMng.h"
 
@@ -31,6 +33,3 @@ void DrawChar(int x, int y, const char c, WORD fcolor, WORD bcolor);
 void EngineSync(int fps);
 void ClearScreen();
 void Flip();
-
-
-extern GameMng gamemng;

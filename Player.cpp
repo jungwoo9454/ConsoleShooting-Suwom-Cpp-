@@ -52,6 +52,7 @@ void Player::FireBullet()
 {
 	if (GetAsyncKeyState(VK_SPACE))
 	{
-		gamemng.CreateBullet(x, y);
+		// GameMng::GetIns()->CreateBullet(x, y);
+		// 
 	}
 }

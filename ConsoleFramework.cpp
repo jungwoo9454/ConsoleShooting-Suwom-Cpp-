@@ -1,9 +1,9 @@
 #include "include.h"
+template<typename T>
+T* Singleton<T>::instance = nullptr;
 
 int screenIndex;
 HANDLE hScreen[2];
-
-GameMng gamemng;
 
 void Init()
 {
@@ -16,15 +16,18 @@ void Init()
 
 	SetConsoleCursorInfo(hScreen[0], &cci);
 	SetConsoleCursorInfo(hScreen[1], &cci);
+
+	GameMng::GetIns()->Init();
+
 }
 void Update()
 {
-	gamemng.Update();
+	GameMng::GetIns()->Update();
 }
 void Draw()
 {
 	ClearScreen();
-	gamemng.Draw();
+	GameMng::GetIns()->Draw();
 	Flip();
 }
 void Release()

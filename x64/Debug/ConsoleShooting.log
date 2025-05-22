@@ -1,2 +1,20 @@
-﻿  GameMng.cpp
+﻿  Bullet.cpp
+  ConsoleFramework.cpp
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\ConsoleFramework.cpp(45,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\ConsoleFramework.cpp(45,19): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\ConsoleFramework.cpp(51,13): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\ConsoleFramework.cpp(65,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\ConsoleFramework.cpp(65,19): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  Effect.cpp
+  Enemy.cpp
+  GameMng.cpp
+  GameState.cpp
+  MenuState.cpp
+  Player.cpp
+  State.cpp
+  StateCtrl.cpp
+  Text.cpp
+  Unit.cpp
+  main.cpp
+  코드를 생성하고 있습니다...
   ConsoleShooting.vcxproj -> C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\x64\Debug\ConsoleShooting.exe
