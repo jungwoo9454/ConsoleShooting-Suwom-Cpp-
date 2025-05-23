@@ -40,6 +40,7 @@ void GameMng::Init()
 void GameMng::Update()
 {
 	statectrl.Update();
+	system->update();
 }
 
 void GameMng::Draw()
