@@ -46,6 +46,9 @@
     <Filter Include="State\GameState">
       <UniqueIdentifier>{d08aaf96-85ea-4dfb-b227-5c8539eb5df0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{55917cef-a1c4-4961-b8b7-34eebe5810d1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -86,6 +89,9 @@
     </ClCompile>
     <ClCompile Include="GameState.cpp">
       <Filter>State\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Sound</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +136,9 @@
     </ClInclude>
     <ClInclude Include="GameState.h">
       <Filter>State\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Sound</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

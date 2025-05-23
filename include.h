@@ -4,6 +4,7 @@
 #include "Define.h"
 #include <string>
 #include <sstream>
+#include <fmod.hpp>
 
 #include "Singleton.h"
 
@@ -17,6 +18,7 @@
 #include "Enemy.h"
 #include "Effect.h"
 #include "Text.h"
+#include "Sound.h"
 
 #include "MenuState.h"
 #include "GameState.h"
