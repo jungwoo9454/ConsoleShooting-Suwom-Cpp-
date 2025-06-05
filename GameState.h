@@ -6,13 +6,12 @@ public:
 	~GameState();
 
 	Player player;
-	Bullet bullets[D_BULLET_MAX];
-	Enemy enemys[D_ENEMY_MAX];
-	Effect effects[D_EFFECT_MAX];
+	std::vector<Bullet*> bullets;
+	std::vector<Enemy*> enemys;
+	std::vector<Effect*> effects;
 	Text text;
 
 	int score;
-
 	DWORD createEnemyTime;
 
 	void Start();

@@ -55,7 +55,7 @@ void Player::FireBullet()
 		//GameMng::GetIns()->CreateBullet(x, y);
 		
 		//((GameState*)GameMng::GetIns()->statectrl.m_pCurState)->CreateBullet(x, y);
-		((GameState*)GameMng::GetIns()->statectrl.m_pStates[E_GAME])->CreateBullet(x, y);
+		((GameState*)GameMng::GetIns()->statectrl.m_pCurState)->CreateBullet(x, y);
 
 		// 강제형변환, dynamic_cast, static_cast
 		// 

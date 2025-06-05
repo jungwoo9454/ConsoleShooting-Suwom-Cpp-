@@ -18,6 +18,8 @@ public:
 	Sound background;
 	Sound bulletfire;
 
+
+
 	CStateCtrl statectrl;
 
 	void Init();

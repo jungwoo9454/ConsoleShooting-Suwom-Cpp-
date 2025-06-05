@@ -5,6 +5,8 @@
 #include <string>
 #include <sstream>
 #include <fmod.hpp>
+//#include <list>		// 이중 연결 리스트
+#include <vector>	// 동적배열
 
 #include "Singleton.h"
 

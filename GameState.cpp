@@ -8,26 +8,36 @@ GameState::GameState()
 
 GameState::~GameState()
 {
+	for (int i = 0;i < bullets.size();i++)
+		delete bullets[i];
+
+	for (int i = 0;i < enemys.size();i++)
+		delete enemys[i];
+
+	for (int i = 0;i < effects.size();i++)
+		delete effects[i];
 }
 
 void GameState::Start()
 {
+	// TODO 1번 문제 풀이
 }
 
 void GameState::Update()
 {
 	if (GetAsyncKeyState(VK_F2))
 	{
-		GameMng::GetIns()->statectrl.StateChange(E_MENU);
+		GameMng::GetIns()->statectrl.StateChange(new MenuState);
 	}
 
+
 	player.Update();
-	for (int i = 0;i < D_BULLET_MAX;i++)
-		bullets[i].Update();
-	for (int i = 0;i < D_ENEMY_MAX;i++)
-		enemys[i].Update();
-	for (int i = 0;i < D_EFFECT_MAX;i++)
-		effects[i].Update();
+	for (int i = 0;i < bullets.size();i++)
+		bullets[i]->Update();
+	for (int i = 0;i < enemys.size();i++)
+		enemys[i]->Update();
+	for (int i = 0;i < effects.size();i++)
+		effects[i]->Update();
 	
 	if (createEnemyTime < GetTickCount())
 	{
@@ -50,12 +60,12 @@ void GameState::Update()
 void GameState::Draw()
 {
 	player.Draw();
-	for (int i = 0;i < D_BULLET_MAX;i++)
-		bullets[i].Draw();
-	for (int i = 0;i < D_ENEMY_MAX;i++)
-		enemys[i].Draw();
-	for (int i = 0;i < D_EFFECT_MAX;i++)
-		effects[i].Draw();
+	for (int i = 0;i < bullets.size();i++)
+		bullets[i]->Draw();
+	for (int i = 0;i < enemys.size();i++)
+		enemys[i]->Draw();
+	for (int i = 0;i < effects.size();i++)
+		effects[i]->Draw();
 
 	text.Draw();
 }
@@ -66,56 +76,69 @@ void GameState::Exit()
 
 void GameState::CreateBullet(int x, int y)
 {
-	for (int i = 0;i < D_BULLET_MAX;i++)
+	GameMng::GetIns()->bulletfire.Play();
+
+	for (int i = 0;i < bullets.size();i++)
 	{
-		if (bullets[i].isAlive == false)
+		if (bullets[i]->isAlive == false)
 		{
-			bullets[i].Enable(x, y);
-			GameMng::GetIns()->bulletfire.Play();
-			break;
+			bullets[i]->Enable(x, y);
+			return;
 		}
 	}
+
+	Bullet* bullet = new Bullet();
+	bullet->Enable(x, y);
+	bullets.push_back(bullet);
 }
 
 void GameState::CreateEnemy(int x, int y)
 {
-	for (int i = 0;i < D_ENEMY_MAX;i++)
+	for (int i = 0;i < enemys.size();i++)
 	{
-		if (enemys[i].isAlive == false)
+		if (enemys[i]->isAlive == false)
 		{
-			enemys[i].Enable(x, y);
-			break;
+			enemys[i]->Enable(x, y);
+			return;
 		}
 	}
+
+	Enemy* enemy = new Enemy();
+	enemy->Enable(x, y);
+	enemys.push_back(enemy);
 }
 
 void GameState::CreateEffect(int x, int y)
 {
-	for (int i = 0;i < D_EFFECT_MAX;i++)
+	for (int i = 0;i < effects.size();i++)
 	{
-		if (effects[i].isAlive == false)
+		if (effects[i]->isAlive == false)
 		{
-			effects[i].Enable(x, y);
-			break;
+			effects[i]->Enable(x, y);
+			return;
 		}
 	}
+
+	Effect* effect = new Effect();
+	effect->Enable(x, y);
+	effects.push_back(effect);
 }
 
 void GameState::EnemyBulletCollision()
 {
-	for (int i = 0;i < D_BULLET_MAX;i++)
+	for (int i = 0;i < bullets.size();i++)
 	{
-		if (bullets[i].isAlive)
+		if (bullets[i]->isAlive)
 		{
-			for (int j = 0;j < D_ENEMY_MAX;j++)
+			for (int j = 0;j < enemys.size();j++)
 			{
-				if (enemys[j].isAlive &&
-					bullets[i].x == enemys[j].x &&
-					(bullets[i].y == enemys[j].y || bullets[i].y - 1 == enemys[j].y))
+				if (enemys[j]->isAlive &&
+					bullets[i]->x == enemys[j]->x &&
+					(bullets[i]->y == enemys[j]->y || bullets[i]->y - 1 == enemys[j]->y))
 				{
-					bullets[i].Disable();
-					enemys[j].Disable();
-					CreateEffect(enemys[j].x, enemys[j].y);
+					bullets[i]->Disable();
+					enemys[j]->Disable();
+					CreateEffect(enemys[j]->x, enemys[j]->y);
 					score++;
 					break;
 				}
