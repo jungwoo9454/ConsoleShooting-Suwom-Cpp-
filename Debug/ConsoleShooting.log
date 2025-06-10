@@ -1,2 +1,24 @@
-﻿  StateCtrl.cpp
+﻿  Bullet.cpp
+  ConsoleFramework.cpp
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\ConsoleFramework.cpp(45,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\ConsoleFramework.cpp(45,19): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\ConsoleFramework.cpp(65,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\ConsoleFramework.cpp(65,19): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  Effect.cpp
+  Enemy.cpp
+  GameMng.cpp
+  GameState.cpp
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\GameState.cpp(20,19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\GameState.cpp(44,19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\GameState.cpp(78,19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\GameState.cpp(138,19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  MenuState.cpp
+  Player.cpp
+  Sound.cpp
+  State.cpp
+  StateCtrl.cpp
+  Text.cpp
+  Unit.cpp
+  main.cpp
+  코드를 생성하고 있습니다...
   ConsoleShooting.vcxproj -> C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\Debug\ConsoleShooting.exe

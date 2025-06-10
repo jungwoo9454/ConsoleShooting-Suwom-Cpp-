@@ -26,3 +26,11 @@ enum
 	E_GAME,
 	E_STATE_MAX
 };
+
+enum
+{
+	E_PLAYER,
+	E_BULLET,
+	E_ENEMY,
+	E_EFFECT
+};

@@ -7,6 +7,7 @@ Player::Player()
 	body = 'A';
 	fColor = INTENSITY_WHITE;
 	isAlive = true;
+	id = E_PLAYER;
 }
 
 Player::~Player()
@@ -55,7 +56,7 @@ void Player::FireBullet()
 		//GameMng::GetIns()->CreateBullet(x, y);
 		
 		//((GameState*)GameMng::GetIns()->statectrl.m_pCurState)->CreateBullet(x, y);
-		((GameState*)GameMng::GetIns()->statectrl.m_pCurState)->CreateBullet(x, y);
+		((GameState*)GameMng::GetIns()->statectrl.m_pCurState)->CreateObject(x, y, E_BULLET);
 
 		// 강제형변환, dynamic_cast, static_cast
 		// 

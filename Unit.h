@@ -13,6 +13,8 @@ public:
 	WORD bColor;
 	bool isAlive;
 
+	int id;
+
 	virtual void Update();
 	virtual void Draw();
 

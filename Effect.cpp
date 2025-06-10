@@ -25,6 +25,7 @@ Effect::Effect()
 	indexUpdateTime = 0;
 
 	fColor = YELLOW;
+	id = E_EFFECT;
 }
 
 Effect::~Effect()

@@ -8,6 +8,8 @@ Unit::Unit()
 	fColor = INTENSITY_WHITE;
 	bColor = BLACK;
 	isAlive = false;
+
+	id = -1;
 }
 
 Unit::~Unit()
