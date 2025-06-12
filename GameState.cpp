@@ -133,6 +133,7 @@ void GameState::Exit()
 //	effects.push_back(effect);
 //}
 
+
 void GameState::CreateObject(int x, int y, int id)
 {
 	for (int i = 0;i < gameobjects.size();i++)
@@ -174,23 +175,23 @@ Unit* GameState::GetCreateObject(int id)
 
 void GameState::EnemyBulletCollision()
 {
-	//for (int i = 0;i < bullets.size();i++)
-	//{
-	//	if (bullets[i]->isAlive)
-	//	{
-	//		for (int j = 0;j < enemys.size();j++)
-	//		{
-	//			if (enemys[j]->isAlive &&
-	//				bullets[i]->x == enemys[j]->x &&
-	//				(bullets[i]->y == enemys[j]->y || bullets[i]->y - 1 == enemys[j]->y))
-	//			{
-	//				bullets[i]->Disable();
-	//				enemys[j]->Disable();
-	//				CreateEffect(enemys[j]->x, enemys[j]->y);
-	//				score++;
-	//				break;
-	//			}
-	//		}
-	//	}
-	//}
+	for (int i = 0;i < gameobjects.size();i++)
+	{
+		if (gameobjects[i]->isAlive && gameobjects[i]->id == E_BULLET)
+		{
+			for (int j = 0;j < gameobjects.size();j++)
+			{
+				if (gameobjects[j]->isAlive && gameobjects[j]->id == E_ENEMY &&
+					gameobjects[i]->x == gameobjects[j]->x &&
+					(gameobjects[i]->y == gameobjects[j]->y || gameobjects[i]->y - 1 == gameobjects[j]->y))
+				{
+					gameobjects[i]->Disable();
+					gameobjects[j]->Disable();
+					CreateObject(gameobjects[j]->x, gameobjects[j]->y, E_EFFECT);
+					score++;
+					break;
+				}
+			}
+		}
+	}
 }

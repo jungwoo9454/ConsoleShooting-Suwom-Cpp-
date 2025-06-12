@@ -12,6 +12,8 @@ C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\Game
 C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\GameState.cpp(44,19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
 C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\GameState.cpp(78,19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
 C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\GameState.cpp(138,19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\GameState.cpp(177,19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Suwom-Cpp-\GameState.cpp(181,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   MenuState.cpp
   Player.cpp
   Sound.cpp

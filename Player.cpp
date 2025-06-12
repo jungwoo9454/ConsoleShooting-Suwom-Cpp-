@@ -59,7 +59,6 @@ void Player::FireBullet()
 		((GameState*)GameMng::GetIns()->statectrl.m_pCurState)->CreateObject(x, y, E_BULLET);
 
 		// 강제형변환, dynamic_cast, static_cast
-		// 
 		// C++ FSM, 다형성, 상속, 업캐스팅, 다운캐스팅
 	}
 }
